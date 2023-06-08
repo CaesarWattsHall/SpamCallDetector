@@ -70,7 +70,7 @@ int main() {
             cout << "The spam number has been deleted from the text file." << endl;
         } else if (choice == "read") {
             readSpamNumbers(phoneNumber);
-            cout << "The spam numbers will be read and displayed from the text file/" << endl;
+            cout << "The spam numbers will be read and displayed from the text file." << endl;
         } else {
             cout << "Invalid choice." << endl;
         }
