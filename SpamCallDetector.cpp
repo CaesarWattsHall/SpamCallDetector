@@ -40,18 +40,6 @@ void deleteSpamNumber(string phoneNumber) {
     rename("temp.txt", "spamNumbers.txt");
 }
 
-void readSpamNumbers() {
-    // Function to read and display the spam numbers stored in the text file
-    ifstream file;
-    file.open("spamNumbers.txt");
-    string line;
-    cout << "Spam numbers:" << endl;
-    while (getline(file, line)) {
-        cout << line << endl;
-    }
-    file.close();
-}
-
 int main() {
     string phoneNumber;
     cout << "Enter phone number: ";
@@ -68,9 +56,6 @@ int main() {
         } else if (choice == "delete") {
             deleteSpamNumber(phoneNumber);
             cout << "The spam number has been deleted from the text file." << endl;
-        } else if (choice == "read") {
-            readSpamNumbers(phoneNumber);
-            cout << "The spam numbers will be read and displayed from the text file." << endl;
         } else {
             cout << "Invalid choice." << endl;
         }
